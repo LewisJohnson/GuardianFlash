@@ -18,3 +18,5 @@ C:\Users\Chubak\Documents\Visual Studio 2015\Projects\GuardianFlash\GuardianFlas
 C:\Users\Chubak\Documents\Visual Studio 2015\Projects\GuardianFlash\GuardianFlash\bin\Debug\FileHelpers.xml
 C:\Users\Chubak\Documents\Visual Studio 2015\Projects\GuardianFlash\GuardianFlash\obj\Debug\ListWindow.g.cs
 C:\Users\Chubak\Documents\Visual Studio 2015\Projects\GuardianFlash\GuardianFlash\obj\Debug\ListWindow.baml
+C:\Users\Chubak\Documents\Visual Studio 2015\Projects\GuardianFlash\GuardianFlash\obj\Debug\ReadReadWindow.g.cs
+C:\Users\Chubak\Documents\Visual Studio 2015\Projects\GuardianFlash\GuardianFlash\obj\Debug\ReadReadWindow.baml

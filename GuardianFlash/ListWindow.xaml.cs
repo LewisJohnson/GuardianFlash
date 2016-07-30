@@ -23,7 +23,7 @@ namespace GuardianFlash
         {
             InitializeComponent();
             string[] cardEntries = System.IO.Directory.GetFiles("cards");
-            listBox.ItemsSource = cardEntries.ToList();
+            
         }
 
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
