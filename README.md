@@ -1,3 +1,3 @@
 ## GuardianFlash Feature Branch
 
-This branch is to add and test new features BEFORE merging with master
+This fork is to test feature for Chubek/GuardianFlash
