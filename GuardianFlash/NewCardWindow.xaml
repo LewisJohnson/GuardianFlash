@@ -1,0 +1,54 @@
+﻿<Window x:Class="GuardianFlash.ReadWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:GuardianFlash"
+    mc:Ignorable="d"
+    Title="ReadWindow" Height="480" Width="600" 
+    MinHeight="480" MinWidth="400" 
+    d:DesignHeight="480" d:DesignWidth="600" ResizeMode="NoResize">
+
+    <Grid Height="Auto" Width="Auto">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <StackPanel Orientation="Horizontal" Background="#ECECEC" >
+                <Label Content="Name"  Margin="0,10,0,10"/>
+                <TextBox TextWrapping="Wrap" Width="120"  Margin="0,10,0,10"/>
+                <Button Content="Next" Width="75" Margin="10" Click="button_Click"/>
+
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Label Content="Front of card" Grid.Row="0" ></Label>
+            <RichTextBox x:Name="frontTextBox" Grid.Row="1" Height="128" BorderThickness="1" Margin="5,0,5,5"  VerticalScrollBarVisibility="Auto"/>
+
+            <Label Content="Back of card" Grid.Row="2"></Label>
+            <RichTextBox x:Name="backTextBox" Grid.Row="3" Height="128" BorderThickness="1" Margin="5,0,5,5" VerticalScrollBarVisibility="Auto"/>
+
+            <Label Grid.Row="4" Content="Difficulty"></Label>
+            <ComboBox Margin="60,0,0,0" Grid.Row="4" x:Name="difficultyBox" HorizontalAlignment="Left" Width="120" SelectionChanged="difficultyBox_SelectionChanged">
+                <ComboBoxItem Background="#FFF3E800" Content="Easy" IsSelected="True"/>
+                <ComboBoxItem Background="#FFCCF770" Content="Medium"/>
+                <ComboBoxItem Background="#FFF18A5A" Content="Hard"/>
+                <ComboBoxItem Background="Red" Content="Very Hard"/>
+            </ComboBox>
+            <Button Grid.Row="5" x:Name="addButton" Content="Add" HorizontalAlignment="Left" Width="120" Height="Auto" MaxHeight="50" Margin="5" Padding="10" VerticalAlignment="Top" Click="addButton_Click"/>
+            <Button Grid.Row="5" x:Name="cancelButton" Content="Cancel" HorizontalAlignment="Right" Width="120" Height="Auto" MaxHeight="50" Margin="5" Padding="10" VerticalAlignment="Top" Click="cancelButton_Click"/>
+        </Grid>
+    </Grid>
+</Window>
